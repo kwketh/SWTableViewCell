@@ -34,7 +34,11 @@ typedef NS_ENUM(NSInteger, SWCellState)
 
 @end
 
+#ifdef COM_PS
+@interface SWTableViewCell : PSTableViewCell
+#else
 @interface SWTableViewCell : UITableViewCell
+#endif
 
 @property (nonatomic, copy) NSArray *leftUtilityButtons;
 @property (nonatomic, copy) NSArray *rightUtilityButtons;
