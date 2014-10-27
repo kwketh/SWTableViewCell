@@ -13,6 +13,10 @@
 #import "SWUtilityButtonTapGestureRecognizer.h"
 #import "NSMutableArray+SWUtilityButtons.h"
 
+#ifdef COM_PS
+#import <app/views/PSTableViewCell.h>
+#endif
+
 @class SWTableViewCell;
 
 typedef NS_ENUM(NSInteger, SWCellState)
